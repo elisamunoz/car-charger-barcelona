@@ -1,6 +1,6 @@
 import Main from './pages'
 
-import '../src/assets/styles/reset.scss';
+import './assets/styles/reset.scss';
 import './App.css';
 
 const App = () => {
