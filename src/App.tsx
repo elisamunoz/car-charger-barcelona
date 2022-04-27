@@ -1,5 +1,6 @@
 import Main from './pages'
 
+import './reset.scss';
 import './App.css';
 
 const App = () => {
