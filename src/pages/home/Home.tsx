@@ -1,11 +1,13 @@
-import Header from '../../ui/components/header'
+import Header from '../../ui/components/layouts/header'
+import Body from '../../ui/components/layouts/body'
+
 import styles from './Home.module.scss'
 
 const Home = () => (
-  <>
+  <div className={styles.home}>
     <Header />
-    <p className={styles.title}>olakase</p>  
-  </>
+    <Body />  
+  </div>
 );
 
 export default Home;
