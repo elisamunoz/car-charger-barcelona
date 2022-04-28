@@ -1,5 +1,5 @@
-import Header from '../../ui/components/layouts/header'
-import Body from '../../ui/components/layouts/body'
+import Header from '../../ui/layouts/header'
+import Body from '../../ui/layouts/body'
 
 import styles from './Home.module.scss'
 
