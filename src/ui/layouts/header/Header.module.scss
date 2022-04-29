@@ -1,15 +1,15 @@
-.wrapperHeader {
-  display: flex;
-}
+@import "../../../assets/styles/index.scss";
 
 .header {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   
   padding: 0 30px;
   width: 100%;
   height: 52px;
-  background: #cbcbcb;
+  box-sizing: border-box;
+  background: $color-main;
 }
 
 .title {

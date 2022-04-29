@@ -1,12 +1,13 @@
+import InfoPanel from '../../components/InfoPanel'
+
 import styles from './Body.module.scss'
 
 const Body = () => (
-  <body className={styles.body}>
+  <div className={styles.body}>
     <div className={styles.content}>
-      
+      <InfoPanel />        
     </div>
-  </body>
-  
+  </div>
 );
 
 export default Body;
