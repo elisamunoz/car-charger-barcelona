@@ -1,0 +1,13 @@
+@import "../../../assets/styles/index.scss";
+
+.body {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  background: $color-main-lighter;
+}
+
+.content {
+  display: flex;
+  padding: $gutterX;
+}

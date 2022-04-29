@@ -1,11 +1,8 @@
-import React from 'react';
 // import 'assets/styles/index.scss';
 import Home from './home';
 
 const Page = () => (
-  <>
-    <Home />
-  </>
+  <Home />
 );
 
 export default Page;
