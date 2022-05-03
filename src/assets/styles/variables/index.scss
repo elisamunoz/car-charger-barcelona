@@ -1,4 +1,50 @@
 @import "./colors.scss";
+/* -------------- */
+/* --- Sizes ---- */
+/* -------------- */
 
+//header height
 $headerHeight: 52px;
+
+// main panel sizes
 $gutterX: 30px;
+$mainTitleSize: 25px;
+$titleSize: 20px;
+$subTitleSize: 17px;
+$textGutterY: 8px;
+
+
+/* -------------- */
+/* --- Others --- */
+/* -------------- */
+
+$border-radius: 1em;
+// $border-style: solid;
+// $border-width: 1px;
+// $border-color: $grey-light;
+// $border: $border-style $border-width $border-color;
+// $border-theme: $border-style $border-width $color-main;
+
+// $transition-duration: 0.5s;
+// $transition-timing: ease;P
+// $transition-property: all;
+// $transition: $transition-duration $transition-timing $transition-property;
+
+
+/* --------------------- */
+/* --- Font Families --- */
+/* --------------------- */
+
+// $font-family-main: 'Roboto', sans-serif;
+// $font-family-title: 'Lexend Giga', serif;
+
+
+/* ********************* */
+/* -- 2. Breakpoints --- */
+/* ********************* */
+
+// $bp_xxs:480px !default;
+// $bp_xs: 767px !default;
+// $bp_sm: $bp_xs + 1 !default;
+// $bp_md: 992px !default;
+// $bp_lg: 1100px !default;

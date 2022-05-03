@@ -1,0 +1,18 @@
+@import "../../../assets/styles/index.scss";
+.mainTitle,
+.title {
+  padding-bottom: $textGutterY;
+}
+
+.mainTitle {
+  font-size: $mainTitleSize;
+  font-weight: 600;
+}
+
+.title {
+  font-size: $titleSize;
+}
+
+.subtitle {
+  font-size: $subTitleSize;
+}
