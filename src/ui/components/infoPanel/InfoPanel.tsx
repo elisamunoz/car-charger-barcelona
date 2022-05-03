@@ -14,12 +14,11 @@ const InfoPanel = ({
   font,
   image,
 }: Props) => (
-  <MainPanelItem
-    title={location}
-  >
-    <h5 className={styles.subtitle}>
+  <MainPanelItem>
+    <h2 className={styles.title}>{location}</h2>
+    <h3 className={styles.subtitle}>
       <b className={styles.bold}>Municipi: </b>{municipi}
-    </h5>
+    </h3>
     <img src={image} alt={location} className={styles.image}/>
     <h6 className={styles.font}>
       <b className={styles.bold}>Font: </b>{font}

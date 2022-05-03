@@ -1,12 +1,13 @@
+import MainPanel from '../../components/mainPanel';
+import FilterPanel from '../../components/filterPanel';
 import InfoPanel from '../../components/infoPanel';
-import MainPanel from '../../components/mainPanel'
-import styles from './Body.module.scss'
+import styles from './Body.module.scss';
 
 const Body = () => (
   <div className={styles.body}>
     <div className={styles.sidePanel}>
       <MainPanel>
-        <MainPanel.Item 
+        <FilterPanel 
           mainTitle='BAMSA Rambla de Catalunya - Endesa'
           title='BAMSA - Rambla de Catalunya, Barcelona, Spain'
           subtitle='Charging points' />
