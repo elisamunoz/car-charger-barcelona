@@ -1,9 +1,17 @@
+import InfoPanelItem from '../infoPanelItem'
 import styles from './InfoPanel.module.scss'
 
-const InfoPanel = () => (
+interface Props {
+  children?: any
+}
+
+const InfoPanel = ({ children }: Props) => (
   <div className={styles.infoPanel}>
-    <p>Info panel</p>
+    {children}
   </div>
 );
+
+
+InfoPanel.Item = InfoPanelItem
 
 export default InfoPanel;
