@@ -18,11 +18,11 @@ const InfoPanel = ({
     title={location}
   >
     <h5 className={styles.subtitle}>
-      <b>Municipi: </b>{municipi}
+      <b className={styles.bold}>Municipi: </b>{municipi}
     </h5>
     <img src={image} alt={location} className={styles.image}/>
     <h6 className={styles.font}>
-      <b>Font: </b>{font}
+      <b className={styles.bold}>Font: </b>{font}
     </h6>
   </MainPanelItem>
 );

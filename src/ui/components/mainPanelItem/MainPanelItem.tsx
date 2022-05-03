@@ -14,9 +14,9 @@ const MainPanelItem: any = ({
   children
 }: Props) => (
   <div className={styles.mainPanelItem}>
-    <h2>{mainTitle}</h2>
-    <h3>{title}</h3>
-    <h4>{subtitle}</h4>
+    <h2 className={styles.mainTitle}>{mainTitle}</h2>
+    <h3 className={styles.title}>{title}</h3>
+    <h4 className={styles.subtitle}>{subtitle}</h4>
     {children}
   </div>
 );

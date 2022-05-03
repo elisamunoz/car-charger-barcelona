@@ -1,5 +1,18 @@
 @import "../../../assets/styles/index.scss";
+.subtitle,
+.image
+ {
+  padding-bottom: $textGutterY;
+}
+
+.subtitle {
+  font-size: $subTitleSize;
+}
 
 .image {
   width: 100%;
+}
+
+.bold {
+  font-weight: 600;
 }
