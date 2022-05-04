@@ -1,20 +1,20 @@
-import MainPanel from '../../components/mainPanel';
+import Panel from '../../components/panel';
 import Filter from '../../components/filterPanel';
 // import InfoPanel from '../../components/infoPanel';
-import styles from './Body.module.scss';
+// import styles from './Body.module.scss';
 
 const FilterItem = ({ mainTitle, title, subtitle}: any) => (
-  <MainPanel.Item>
+  <Panel.Item>
     <Filter
       mainTitle={mainTitle}
       title={title}
       subtitle={subtitle}
     />
-  </MainPanel.Item>
+  </Panel.Item>
 )
 
-const Panel = () => (
-  <MainPanel>
+const PanelSideBar = () => (
+  <Panel>
     <FilterItem
       mainTitle='BAMSA Rambla de Catalunya - Endesa'
       title='BAMSA - Rambla de Catalunya, Barcelona, Spain'
@@ -34,7 +34,7 @@ const Panel = () => (
       font="Centre Nacional de Trànsit d'Andorra"
       image="https://www.meme-arsenal.com/memes/c2c147dcd0a91c561966c8342dd7586a.jpg"
     /> */}
-  </MainPanel>
+  </Panel>
 );
 
-export default Panel;
+export default PanelSideBar;
