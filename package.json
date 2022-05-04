@@ -59,7 +59,21 @@
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.5.0",
     "husky": "^7.0.4",
+    "lint-staged": "^12.4.1",
     "prettier": "^2.6.2",
     "prettier-eslint": "^14.0.2"
+  },
+  "lint-staged": {
+    "**/*.{js, jsx, ts,tsx}": [
+      "prettier --write",
+      "eslint --fix",
+      "jest --findRelatedTests"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "validate-commit-msg",
+      "pre-commit": "npm run clean && lint-staged"
+    }
   }
 }
