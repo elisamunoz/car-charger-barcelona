@@ -5,7 +5,7 @@ interface Props {
 }
 
 const MainPanelItem: any = ({
-  children
+  children,
 }: Props) => (
   <div className={styles.mainPanelItem}>
     {children}
