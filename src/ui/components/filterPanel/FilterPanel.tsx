@@ -1,4 +1,4 @@
-import FilterPanelItem from '../filterPanelItem';
+import FilterItem from '../filterItem';
 import styles from './FilterPanel.module.scss';
 
 interface Props {
@@ -16,7 +16,7 @@ const FilterPanel = ({
     {mainTitle && <h2 className={styles.mainTitle}>{mainTitle}</h2>}
     {title && <h3 className={styles.title}>{title}</h3>}
     {subtitle && <h4 className={styles.subtitle}>{subtitle}</h4>}
-    <FilterPanelItem
+    <FilterItem
       text='Estat del transit'
       toggleIcon='icon'
     />

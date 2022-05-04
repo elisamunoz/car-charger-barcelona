@@ -1,15 +1,15 @@
-import styles from './FilterPanelItem.module.scss';
+import styles from './FilterItem.module.scss';
 
 interface Props {
   text: string,
   toggleIcon: string
 }
 
-const FilterPanelItem = ({
+const FilterItem = ({
   text,
   toggleIcon
 }: Props) => (
-  <div className={styles.filterPanelItem}>
+  <div className={styles.filterItem}>
     <div className={styles.text}>{text}</div>
     <div className={styles.toggleIcon}>
       {toggleIcon}
@@ -17,4 +17,4 @@ const FilterPanelItem = ({
   </div>
 );
 
-export default FilterPanelItem;
+export default FilterItem;
