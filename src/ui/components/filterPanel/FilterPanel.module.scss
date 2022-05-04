@@ -1,4 +1,9 @@
 @import "../../../assets/styles/index.scss";
+.filterPanel {
+  display: flex;
+  flex-direction: column;
+}
+
 .mainTitle,
 .title {
   padding-bottom: $textGutterY;

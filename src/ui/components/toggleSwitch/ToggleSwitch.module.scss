@@ -1,0 +1,35 @@
+@import "../../../assets/styles/index.scss";
+
+.toggleSwitch {
+  position: relative;
+  font-size: $fontSizeToggleSwitch;
+  width: $toggleSwitchWidth;
+  height: $toggleSwitchHeight;
+  box-sizing: border-box;
+  background: pink;
+  border-radius: 1em;
+  display: flex;
+  cursor: pointer;
+
+}
+
+.knob {
+  position: absolute;
+  width: $toggleKnobSize;
+  height: $toggleKnobSize;
+  background: red;
+  border-radius: 50%;
+  top: $toggleTopKnobGutter;
+  left: $toggleleftKnobGutter;
+
+  transform: translateX(125%);
+  transition: 0.4s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+}
+
+.toggleSwitchiIsActive {
+  background: red;
+
+  .knob {
+    background: yellow
+  }
+}
