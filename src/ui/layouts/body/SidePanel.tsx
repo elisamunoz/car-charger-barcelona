@@ -1,6 +1,6 @@
 import Panel from '../../components/panel';
 import Filter from '../../components/filterPanel';
-// import InfoPanel from '../../components/infoPanel';
+// import CameraPanel from '../../components/cameraPanel';
 // import styles from './Body.module.scss';
 
 const FilterItem = ({ mainTitle, title, subtitle}: any) => (
@@ -28,7 +28,7 @@ const PanelSideBar = () => (
       title='BAMSA - Rambla de Catalunya, Barcelona, Spain'
       subtitle='Charging points'
     />
-    {/* <InfoPanel
+    {/* <CameraPanel
       location="CG1 / PK 9+791 (La Portalada) / 860 metres(Km 9)"
       municipi="Andorra"
       font="Centre Nacional de Trànsit d'Andorra"

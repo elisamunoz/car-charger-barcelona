@@ -1,5 +1,5 @@
 import PanelItem from '../panelItem';
-import styles from './InfoPanel.module.scss';
+import styles from './CameraPanel.module.scss';
 
 interface Props {
   location?: string,
@@ -8,7 +8,7 @@ interface Props {
   image?: string,
 }
 
-const InfoPanel = ({
+const CameraPanel = ({
   location,
   municipi,
   font,
@@ -26,7 +26,4 @@ const InfoPanel = ({
   </PanelItem>
 );
 
-
-// Panel.Item = PanelItem
-
-export default InfoPanel;
+export default CameraPanel;
