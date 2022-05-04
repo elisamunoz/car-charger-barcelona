@@ -65,15 +65,13 @@
   },
   "lint-staged": {
     "**/*.{js, jsx, ts,tsx}": [
-      "prettier --write",
       "eslint --fix",
-      "jest --findRelatedTests"
+      "git add"
     ]
   },
   "husky": {
     "hooks": {
-      "commit-msg": "validate-commit-msg",
-      "pre-commit": "npm run clean && lint-staged"
+      "pre-commit": "lint-staged"
     }
   }
 }
