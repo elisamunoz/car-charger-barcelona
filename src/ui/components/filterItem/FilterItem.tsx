@@ -13,6 +13,7 @@ const FilterItem = ({
     <div className={styles.toggleIcon}>
       <ToggleSwitch />
       <ToggleSwitch isActive />
+      <ToggleSwitch disabled />
     </div>
   </div>
 );

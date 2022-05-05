@@ -19,6 +19,7 @@ const ToggleSwitch = ({
     className={cx({
       toggleSwitch: true,
       toggleSwitchiIsActive: isActive,
+      toggleSwitchDisabled: disabled,
     })}
   >
     <div className={styles.knob}></div>

@@ -15,12 +15,14 @@ $textGutterY: 8px;
 
 //toggleSwitch
 $fontSizeToggleSwitch: 30px;
-$toggleSwitchWidth: 2em;
-$toggleSwitchHeight: 1em;
-$toggleSwitchBorderRadius: 34px;
-$toggleKnobSize: .8em;
-$toggleTopKnobGutter: .1em;
-$toggleleftKnobGutter: 5%;
+$YgutterToggleSwitch: 5px;
+$toggleSwitchBorderRadius: 2.5em;
+$toggleSwitchWidth: 5em;
+$toggleSwitchHeight: 2.5em;
+
+//toggle knob
+$toggleKnobSize: 1.875em;
+$toggleKnobGutter: 0.3125em;
 
 /* -------------- */
 /* --- Others --- */
