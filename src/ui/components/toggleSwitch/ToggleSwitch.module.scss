@@ -29,8 +29,8 @@
   width: $toggleKnobSize;
   height: $toggleKnobSize;
   border-radius: 50%;
-  top: $toggleKnobGutter;
-  left: $toggleKnobGutter;
+  top: $toggleTopKnobGutter;
+  left: $toggleLeftKnobGutter;
   background: $toggleSwitchKnob;
   transition: 0.4s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
 }
@@ -40,7 +40,7 @@
 
   .knob {
     background: $isActiveToggleSwitchKnob;
-    transform: translateX(135%);
+    transform: translateX(125%);
   }
 
   &:hover {
