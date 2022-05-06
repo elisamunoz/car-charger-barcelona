@@ -1,15 +1,11 @@
-import styles from './PanelItem.module.scss'
+import styles from "./PanelItem.module.scss";
 
 interface Props {
-  children?: string,
+  children?: string;
 }
 
-const PanelItem: any = ({
-  children,
-}: Props) => (
-  <div className={styles.panelItem}>
-    {children}
-  </div>
+const PanelItem: any = ({ children }: Props) => (
+  <div className={styles.panelItem}>{children}</div>
 );
 
 export default PanelItem;

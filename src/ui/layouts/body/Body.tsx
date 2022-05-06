@@ -1,5 +1,5 @@
-import SidePanel from './SidePanel'
-import styles from './Body.module.scss';
+import SidePanel from "./SidePanel";
+import styles from "./Body.module.scss";
 
 const Body = () => (
   <div className={styles.body}>

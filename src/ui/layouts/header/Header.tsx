@@ -1,4 +1,4 @@
-import styles from './Header.module.scss'
+import styles from "./Header.module.scss";
 
 const Header = () => (
   <header className={styles.header}>
@@ -8,7 +8,6 @@ const Header = () => (
       </div>
       <div className={styles.text}>
         <h4>Catalunya Traffic</h4>
-      
       </div>
     </div>
     <div className={styles.search}>
