@@ -18,9 +18,11 @@
     background: $hoverToggleSwitch;
   }
 
+  outline: 2px solid transparent;
+
   &:focus,
   &:focus-visible {
-    outline: 2px solid $focusToggleSwitch;
+    outline-color: $focusToggleSwitch;
   }
 }
 
@@ -49,7 +51,7 @@
 
   &:focus,
   &:focus-visible {
-    outline: 2px solid $isActiveFocusToggleSwitch;
+    outline-color: $isActiveFocusToggleSwitch;
   }
 }
 
