@@ -20,14 +20,6 @@ const PanelSideBar = () => (
       title='BAMSA - Rambla de Catalunya, Barcelona, Spain'
       subtitle='Charging points'
     />
-    <FilterItem
-      title='BAMSA - Rambla de Catalunya, Barcelona, Spain'
-    />
-    <FilterItem
-      mainTitle='BAMSA Rambla de Catalunya - Endesa'
-      title='BAMSA - Rambla de Catalunya, Barcelona, Spain'
-      subtitle='Charging points'
-    />
     {/* <CameraPanel
       location="CG1 / PK 9+791 (La Portalada) / 860 metres(Km 9)"
       municipi="Andorra"

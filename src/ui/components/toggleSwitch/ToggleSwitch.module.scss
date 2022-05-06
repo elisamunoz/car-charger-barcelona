@@ -1,0 +1,65 @@
+@import "../../../assets/styles/index.scss";
+
+.toggleSwitch {
+  display: flex;
+  position: relative;
+  background: $toggleSwitch;
+  font-size: $fontSizeToggleSwitch;
+  width: $toggleSwitchWidth;
+  height: $toggleSwitchHeight;
+  margin: $YgutterToggleSwitch;
+  box-sizing: border-box;
+  border-radius: $toggleSwitchBorderRadius;  
+  cursor: pointer;
+  box-shadow: 0 10px 20px -8px #e5e5e5;
+  transition: 0.4s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+
+  &:hover {
+    background: $hoverToggleSwitch;
+  }
+
+  outline: 2px solid transparent;
+
+  &:focus,
+  &:focus-visible {
+    outline-color: $focusToggleSwitch;
+  }
+}
+
+.knob {
+  position: absolute;
+  width: $toggleKnobSize;
+  height: $toggleKnobSize;
+  border-radius: 50%;
+  top: $toggleTopKnobGutter;
+  left: $toggleLeftKnobGutter;
+  background: $toggleSwitchKnob;
+  transition: 0.4s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+}
+
+.toggleSwitchiIsActive {
+  background: $isActiveToggleSwitch;
+
+  .knob {
+    background: $isActiveToggleSwitchKnob;
+    transform: translateX(125%);
+  }
+
+  &:hover {
+    background: $isActiveHoverToggleSwitch;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline-color: $isActiveFocusToggleSwitch;
+  }
+}
+
+.toggleSwitchDisabled {
+  cursor: auto;
+  pointer-events: none;
+
+  .knob {
+    background: $disabledToggleSwitchKnob;
+  }
+}

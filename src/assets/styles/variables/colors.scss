@@ -1,13 +1,42 @@
+$white: #ffffff;
 $dark-gray: #cbcbcb;
 $gray: #e5e5e5;
 $light-gray: #f5f5f5;
+$lightest-gray: #dbdbdb;
+$transparent-gray: #cbcbcb78;
+$light-pink: #ffdbe1;
+$lightest-pink: #f9e8eb;
+$turquoise: #00db9e;
+$light-turquoise: #06f1b0;
+$transparent-turquoise: #00db9e4f;
+
 
 /* -------------- */
 /* --- Colors --- */
 /* -------------- */
+
+//General colors
 $color-main: $dark-gray;
 $color-main-light: $gray;
 $color-main-lighter: $light-gray;
+
+//Toggle colors
+$isActiveToggleSwitch: $turquoise;
+$isActiveToggleSwitchKnob: $light-pink;
+$isActiveHoverToggleSwitch: $light-turquoise;
+$isActiveFocusToggleSwitch: $transparent-turquoise;
+
+$toggleSwitch: $dark-gray;
+$toggleSwitchKnob: $light-pink;
+$focusToggleSwitch: $transparent-gray;
+$hoverToggleSwitch: $lightest-gray;
+
+$disabledToggleSwitch: $gray;
+$disabledToggleSwitchKnob: $light-gray;
+
+
+
+
 // $color-main-text: var(--main-color-text);
 // $color-main-dark: var(--main-color-dark);
 // $color-main-darker: var(--main-color--darker);

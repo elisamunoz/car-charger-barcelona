@@ -1,20 +1,29 @@
+import { useState } from 'react';
+import ToggleSwitch from '../toggleSwitch';
 import styles from './FilterItem.module.scss';
 
 interface Props {
   text: string,
-  toggleIcon: string
 }
 
 const FilterItem = ({
   text,
-  toggleIcon
-}: Props) => (
-  <div className={styles.filterItem}>
-    <div className={styles.text}>{text}</div>
-    <div className={styles.toggleIcon}>
-      {toggleIcon}
+}: Props) => {
+  const [filterOn, setFilterOn] = useState(false)
+  const toggleFilter = () => {
+    setFilterOn(!filterOn)
+  }
+
+  return (
+    <div className={styles.filterItem}>
+      <div className={styles.text}>{text}</div>
+      <div className={styles.toggleIcon}>
+        <ToggleSwitch isActive={filterOn} onClick={toggleFilter} />
+        <ToggleSwitch isActive={filterOn} onClick={toggleFilter} />
+        <ToggleSwitch disabled />
+      </div>
     </div>
-  </div>
-);
+  );
+}
 
 export default FilterItem;
