@@ -12,7 +12,7 @@ const FilterPanel = ({ mainTitle, title, subtitle }: Props) => (
     {mainTitle && <h2 className={styles.mainTitle}>{mainTitle}</h2>}
     {title && <h3 className={styles.title}>{title}</h3>}
     {subtitle && <h4 className={styles.subtitle}>{subtitle}</h4>}
-    <FilterItem text="Estat del transit" />
+    <FilterItem text="Estat del transit Estat del transit Estat del transit " />
   </div>
 );
 

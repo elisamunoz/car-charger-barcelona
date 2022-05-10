@@ -5,13 +5,23 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 0;
 }
 
 .icon {
-  width: 30px;
-  background: pink;
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.text {
+  flex-grow: 4;
+  text-align: left;
+  padding-left: 10px;
 }
 
 .toggleIcon {
-  background: red;
+  flex-grow: 1;
 }
