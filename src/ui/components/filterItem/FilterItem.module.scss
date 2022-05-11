@@ -1,4 +1,4 @@
-@import "../../../assets/styles/index.scss";
+@import '../../../assets/styles/index.scss';
 
 .filterItem {
   display: flex;
@@ -13,15 +13,13 @@
   align-self: stretch;
   align-items: center;
   justify-content: center;
-  flex-grow: 1;
 }
 
 .text {
-  flex-grow: 4;
+  flex-grow: 1;
   text-align: left;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
-.toggleIcon {
-  flex-grow: 1;
-}
+// .toggleIcon {
+// }
