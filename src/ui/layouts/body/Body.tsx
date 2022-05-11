@@ -1,4 +1,5 @@
 import SidePanel from "./SidePanel";
+import MapComponent from "../../components/mapComponent";
 import styles from "./Body.module.scss";
 
 const Body = () => (
@@ -6,6 +7,7 @@ const Body = () => (
     <div className={styles.sidePanel}>
       <SidePanel />
     </div>
+    <MapComponent />
   </div>
 );
 

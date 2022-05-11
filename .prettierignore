@@ -1,0 +1,6 @@
+# Ignore artifacts: 
+build 
+src/constants.ts
+
+# Ignore all HTML files:
+*.html 
