@@ -16,8 +16,6 @@ const FilterPanel = ({ mainTitle, title, subtitle }: Props) => (
     <FilterItem text='Panells' />
     <FilterItem text='Obres' />
     <FilterItem text='Retencions' />
-    <FilterItem text='Retencions' />
-    <FilterItem text='Retencions' />
   </div>
 );
 
