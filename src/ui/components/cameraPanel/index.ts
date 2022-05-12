@@ -1,3 +1,3 @@
-import CameraPanel from './CameraPanel';
+import CameraPanel from "./CameraPanel";
 
 export default CameraPanel;

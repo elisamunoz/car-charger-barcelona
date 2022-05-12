@@ -1,17 +1,14 @@
-import PanelItem from '../panelItem'
-import styles from './Panel.module.scss'
+import PanelItem from "../panelItem";
+import styles from "./Panel.module.scss";
 
 interface Props {
-  children?: any
+  children?: any;
 }
 
 const Panel = ({ children }: Props) => (
-  <div className={styles.panel}>
-    {children}
-  </div>
+  <div className={styles.panel}>{children}</div>
 );
 
-
-Panel.Item = PanelItem
+Panel.Item = PanelItem;
 
 export default Panel;
