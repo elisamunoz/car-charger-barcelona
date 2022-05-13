@@ -1,5 +1,5 @@
-import Panel from "../../components/panel";
-import Filter from "../../components/filterPanel";
+import Panel from '../../components/panel';
+import Filter from '../../components/filterPanel';
 // import CameraPanel from '../../components/cameraPanel';
 // import styles from './Body.module.scss';
 
@@ -12,9 +12,9 @@ const FilterItem = ({ mainTitle, title, subtitle }: any) => (
 const PanelSideBar = () => (
   <Panel>
     <FilterItem
-      mainTitle="BAMSA Rambla de Catalunya - Endesa"
-      title="BAMSA - Rambla de Catalunya, Barcelona, Spain"
-      subtitle="Charging points"
+      mainTitle='BAMSA Rambla de Catalunya - Endesa'
+      title='BAMSA - Rambla de Catalunya, Barcelona, Spain'
+      subtitle='Charging points'
     />
     {/* <CameraPanel
       location="CG1 / PK 9+791 (La Portalada) / 860 metres(Km 9)"

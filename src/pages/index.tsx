@@ -1,5 +1,5 @@
 // import 'assets/styles/index.scss';
-import Home from "./home";
+import Home from './home';
 
 const Page = () => <Home />;
 

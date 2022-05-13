@@ -1,5 +1,5 @@
-import PanelItem from "../panelItem";
-import styles from "./CameraPanel.module.scss";
+import PanelItem from '../panelItem';
+import styles from './CameraPanel.module.scss';
 
 interface Props {
   location?: string;

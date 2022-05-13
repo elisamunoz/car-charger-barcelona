@@ -1,6 +1,6 @@
-import { FaHome } from "react-icons/fa";
-import { IconContext } from "react-icons";
-import styles from "./Icon.module.scss";
+import { FaHome } from 'react-icons/fa';
+import { IconContext } from 'react-icons';
+import styles from './Icon.module.scss';
 
 interface Props {
   size?: number;

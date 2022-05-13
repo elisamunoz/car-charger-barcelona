@@ -1,8 +1,8 @@
-import { useState } from "react";
-import { FaMouse } from "react-icons/fa";
-import ToggleSwitch from "../toggleSwitch";
-import Icon from "../icon";
-import styles from "./FilterItem.module.scss";
+import { useState } from 'react';
+import { FaMouse } from 'react-icons/fa';
+import ToggleSwitch from '../toggleSwitch';
+import Icon from '../icon';
+import styles from './FilterItem.module.scss';
 
 interface Props {
   text: string;

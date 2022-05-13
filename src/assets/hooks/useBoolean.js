@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo } from 'react';
 
 const useBoolean = (iniValue = false): any => {
   const [value, setValue]: [boolean, any] = useState(iniValue);
