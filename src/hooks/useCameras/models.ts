@@ -1,3 +1,4 @@
+import { Camera } from 'models/cameras'
 export interface APIResponse {
   type: 'FeatureCollection'
   features: Camera[]
@@ -8,18 +9,4 @@ export interface APIResponse {
     }
   }
   bbox: number[]
-}
-
-export interface Camera {
-  type: 'Feature'
-  id: string
-  geometry: {
-    type: 'Point'
-    coordinates: number[]
-  }
-  geometry_name: 'geom'
-  properties: {
-    id_camera: number
-    zoom_level: number
-  }
 }

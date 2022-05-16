@@ -1,3 +1,5 @@
+import { Panel } from 'models/panels'
+
 export interface APIResponse {
   type: 'FeatureCollection'
   features: Panel[]
@@ -8,18 +10,4 @@ export interface APIResponse {
     }
   }
   bbox: number[]
-}
-
-export interface Panel {
-  type: 'Feature'
-  id: string
-  geometry: {
-    type: 'Point'
-    coordinates: number[]
-  }
-  geometry_name: 'geom'
-  properties: {
-    id_panel: string
-    zoom_level: number
-  }
 }
