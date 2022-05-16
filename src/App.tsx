@@ -1,8 +1,8 @@
 import Main from './pages'
 
-import { useGetPanels } from './hooks/usePanels'
-import { useGetCameras } from './hooks/useCameras'
-import './assets/styles/reset.scss'
+import { useGetPanels } from 'hooks/usePanels'
+import { useGetCameras } from 'hooks/useCameras'
+import 'assets/styles/reset.scss'
 import './App.css'
 
 const App = () => {

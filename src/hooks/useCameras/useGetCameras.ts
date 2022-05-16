@@ -11,8 +11,6 @@ const useGet = () => {
   const error = false
   // const { data, error } = useSWR<APIResponse>(url, fetcher)
 
-  console.log(data)
-
   return {
     data: data?.features ?? [],
     error,
