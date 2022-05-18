@@ -1,11 +1,11 @@
-import PanelItem from "../panelItem";
-import styles from "./CameraPanel.module.scss";
+import PanelItem from '../panelItem'
+import styles from './CameraPanel.module.scss'
 
 interface Props {
-  location?: string;
-  municipi?: string;
-  font?: string;
-  image?: string;
+  location?: string
+  municipi?: string
+  font?: string
+  image?: string
 }
 
 const CameraPanel = ({ location, municipi, font, image }: Props) => (
@@ -21,6 +21,6 @@ const CameraPanel = ({ location, municipi, font, image }: Props) => (
       {font}
     </h6>
   </PanelItem>
-);
+)
 
-export default CameraPanel;
+export default CameraPanel

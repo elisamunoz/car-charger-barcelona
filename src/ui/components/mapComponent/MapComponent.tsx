@@ -1,10 +1,10 @@
-import Map from 'react-map-gl';
-import { MAP_BOX_TOKEN } from '../../../constants';
-import styles from './MapComponent.module.scss';
+import Map from 'react-map-gl'
+import { MAP_BOX_TOKEN } from '../../../constants'
+import styles from './MapComponent.module.scss'
 
 interface Props {
-  latitude: number;
-  longitude: number;
+  latitude: number
+  longitude: number
 }
 
 const MapComponent = ({ latitude, longitude }: Props) => (
@@ -20,6 +20,6 @@ const MapComponent = ({ latitude, longitude }: Props) => (
       mapboxAccessToken={MAP_BOX_TOKEN}
     />
   </div>
-);
+)
 
-export default MapComponent;
+export default MapComponent

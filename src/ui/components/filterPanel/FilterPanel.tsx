@@ -1,10 +1,10 @@
-import FilterItem from '../filterItem';
-import styles from './FilterPanel.module.scss';
+import FilterItem from '../filterItem'
+import styles from './FilterPanel.module.scss'
 
 interface Props {
-  mainTitle?: string;
-  title?: string;
-  subtitle?: string;
+  mainTitle?: string
+  title?: string
+  subtitle?: string
 }
 
 const FilterPanel = ({ mainTitle, title, subtitle }: Props) => (
@@ -17,6 +17,6 @@ const FilterPanel = ({ mainTitle, title, subtitle }: Props) => (
     <FilterItem text='Obres' />
     <FilterItem text='Retencions' />
   </div>
-);
+)
 
-export default FilterPanel;
+export default FilterPanel
