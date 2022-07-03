@@ -1,6 +1,6 @@
 // import 'assets/styles/index.scss';
-import Home from './home';
+import Home from './home'
 
-const Page = () => <Home />;
+const Page = () => <Home />
 
-export default Page;
+export default Page

@@ -1,18 +1,18 @@
-import { useState } from 'react';
-import { FaMouse } from 'react-icons/fa';
-import ToggleSwitch from '../toggleSwitch';
-import Icon from '../icon';
-import styles from './FilterItem.module.scss';
+import { useState } from 'react'
+import { FaMouse } from 'react-icons/fa'
+import ToggleSwitch from '../toggleSwitch'
+import Icon from '../icon'
+import styles from './FilterItem.module.scss'
 
 interface Props {
-  text: string;
+  text: string
 }
 
 const FilterItem = ({ text }: Props) => {
-  const [filterOn, setFilterOn] = useState(false);
+  const [filterOn, setFilterOn] = useState(false)
   const toggleFilter = () => {
-    setFilterOn(!filterOn);
-  };
+    setFilterOn(!filterOn)
+  }
 
   return (
     <div className={styles.filterItem}>
@@ -25,7 +25,7 @@ const FilterItem = ({ text }: Props) => {
         {/* <ToggleSwitch disabled /> */}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default FilterItem;
+export default FilterItem

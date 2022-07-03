@@ -1,7 +1,7 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo } from 'react'
 
-const useBoolean = (iniValue = false): any => {
-  const [value, setValue]: [boolean, any] = useState(iniValue);
+const useBoolean = (iniValue = false) => {
+  const [value, setValue] = useState(iniValue)
 
   const actions = {
     setValue,
@@ -9,9 +9,9 @@ const useBoolean = (iniValue = false): any => {
     setFalse: () => setValue(false),
     toggle: () => setValue(!value),
     reset: () => setValue(iniValue),
-  };
+  }
 
-  return useMemo(() => [value, actions], [value, actions]);
-};
+  return useMemo(() => [value, actions], [value, actions])
+}
 
-export { useBoolean };
+export { useBoolean }
