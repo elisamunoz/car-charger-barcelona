@@ -4,7 +4,7 @@ import styles from './Body.module.scss';
 
 const Body = () => (
   <div className={styles.body}>
-    <MapComponent longitude={2.15899} latitude={41.38879} />
+    <MapComponent longitude={2.1700471} latitude={41.3870154} />
     <div className={styles.sidePanel}>
       <SidePanel />
     </div>

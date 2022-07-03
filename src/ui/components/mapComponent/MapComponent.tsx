@@ -1,6 +1,7 @@
 import { useMemo } from 'react';
 import Map, { Marker } from 'react-map-gl';
 import { MAP_BOX_TOKEN } from '../../../constants';
+import 'mapbox-gl/dist/mapbox-gl.css';
 import Pin from './PinMarker';
 // import Icon from '../icon';
 // import { MdLocationPin } from 'react-icons/md';
