@@ -4,12 +4,12 @@ $gray: #e5e5e5;
 $light-gray: #f5f5f5;
 $lightest-gray: #dbdbdb;
 $transparent-gray: #cbcbcb78;
+$pink: #ffcaca;
 $light-pink: #ffdbe1;
 $lightest-pink: #f9e8eb;
 $turquoise: #00db9e;
 $light-turquoise: #06f1b0;
 $transparent-turquoise: #00db9e4f;
-
 
 /* -------------- */
 /* --- Colors --- */
@@ -17,7 +17,7 @@ $transparent-turquoise: #00db9e4f;
 
 //General colors
 $color-main: $dark-gray;
-$color-main-light: $gray;
+$color-main-light: $pink;
 $color-main-lighter: $light-gray;
 
 //Toggle colors
@@ -33,9 +33,6 @@ $hoverToggleSwitch: $lightest-gray;
 
 $disabledToggleSwitch: $gray;
 $disabledToggleSwitchKnob: $light-gray;
-
-
-
 
 // $color-main-text: var(--main-color-text);
 // $color-main-dark: var(--main-color-dark);

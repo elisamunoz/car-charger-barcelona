@@ -1,16 +1,17 @@
 import Main from './pages'
+import 'mapbox-gl/dist/mapbox-gl.css'
 
-import { useGetPanels } from 'hooks/usePanels'
-import { useGetCameras } from 'hooks/useCameras'
+// import { useGetPanels } from 'hooks/usePanels'
+// import { useGetCameras } from 'hooks/useCameras'
 import 'assets/styles/reset.scss'
 import './App.css'
 
 const App = () => {
-  const { data: dataPanels } = useGetPanels()
-  const { data: dataCameras } = useGetCameras()
+  // const { data: dataPanels } = useGetPanels()
+  // const { data: dataCameras } = useGetCameras()
 
-  console.log({ dataPanels })
-  console.log({ dataCameras })
+  // console.log({ dataPanels })
+  // console.log({ dataCameras })
   return (
     <div className='App'>
       <Main />
