@@ -1,3 +1,4 @@
+import SearchBar from 'ui/components/searchBar'
 import styles from './Header.module.scss'
 
 const Header = () => (
@@ -12,7 +13,7 @@ const Header = () => (
     </div>
     <div className={styles.search}>
       <div className={styles.searchbar}>
-        <p>Search bar</p>
+        <SearchBar />
       </div>
     </div>
   </header>

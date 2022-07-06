@@ -1,0 +1,39 @@
+.root {
+  display: block;
+  width: 200px;
+  transition: width .6s;
+
+  &.hasFocus {
+    width: 300px;
+  }
+}
+.wrapper {
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  box-sizing: border-box;
+  background: white;
+  border: 2px black solid;
+  border-radius: 4px;
+}
+
+.suggestionsPanel {
+  position: absolute;
+  box-sizing: border-box;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: white;
+  border: 2px black solid;
+  border-radius: 4px;
+
+  opacity: 0;
+  transition: opacity .6s;
+
+  &.hasFocus {
+    opacity: 1;
+  }
+}
