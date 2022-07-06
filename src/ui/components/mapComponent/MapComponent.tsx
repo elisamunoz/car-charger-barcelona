@@ -28,18 +28,15 @@ const MapComponent = ({ latitude, longitude, cameras = [] }: Props) => {
         mapStyle='mapbox://styles/mapbox/streets-v9'
         mapboxAccessToken={MAP_BOX_TOKEN}
       >
-        <Marker longitude={2.1700471} latitude={41.3870154} anchor='bottom'>
-          <Pin />
-        </Marker>
-        {/* {cameras.map((camera, i) => {
+        {cameras.map((camera, i) => {
           const coordinates = camera?.geometry?.coordinates
 
           return (
           <Marker longitude={coordinates[0]} latitude={coordinates[1]} anchor='bottom' key={i}>
-            <img src='./pin.png' />
+            <Pin />
           </Marker>
           )
-        })} */}
+        })}
       </Map>
     </div>
   )
