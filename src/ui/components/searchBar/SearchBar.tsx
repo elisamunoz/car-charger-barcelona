@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { FaSearch } from 'react-icons/fa'
 import Icon from '../icon'
 import styles from './SearchBar.module.scss'
 import classNames from 'classnames/bind'
@@ -38,7 +39,7 @@ const ToggleSwitch = () => {
         </ul>
       </div>
       <div className={styles.icon}>
-        <Icon />
+        <Icon size={22} icon={FaSearch} />
       </div>
     </div>
   )
