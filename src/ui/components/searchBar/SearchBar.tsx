@@ -1,5 +1,47 @@
+import { useState } from 'react'
+import Icon from '../icon'
 import styles from './SearchBar.module.scss'
+import classNames from 'classnames/bind'
 
-const SearchBar = () => {}
+const cx = classNames.bind(styles)
 
-export default SearchBar
+const ToggleSwitch = () => {
+  const [value, setValue] = useState('')
+  const [hasFocus, setHasFocus] = useState(false)
+
+  return (
+    <div className={cx({ root: true, hasFocus })}>
+      <div className={styles.wrapper}>
+        <input
+          value={value}
+          onChange={(e) => {
+            setValue(e.target.value)
+          }}
+          onFocus={() => setHasFocus(true)}
+          onBlur={() => setHasFocus(false)}
+          className={cx({
+            input: true,
+            hasFocus,
+          })}
+          placeholder='Busca aquí'
+        />
+        {/* <div className={styles.icon}>
+          <Icon />
+        </div> */}
+        <ul
+          className={cx({
+            suggestionsPanel: true,
+            hasFocus,
+          })}
+        >
+          <li className={styles.list}>Option 1</li>
+          <li className={styles.list}>Option 2</li>
+          <li className={styles.list}>Option 3</li>
+          <li className={styles.list}>Option 4</li>
+        </ul>
+      </div>
+    </div>
+  )
+}
+
+export default ToggleSwitch
