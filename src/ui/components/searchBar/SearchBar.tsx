@@ -25,9 +25,6 @@ const ToggleSwitch = () => {
           })}
           placeholder='Busca aquí'
         />
-        {/* <div className={styles.icon}>
-          <Icon />
-        </div> */}
         <ul
           className={cx({
             suggestionsPanel: true,
@@ -39,6 +36,9 @@ const ToggleSwitch = () => {
           <li className={styles.list}>Option 3</li>
           <li className={styles.list}>Option 4</li>
         </ul>
+      </div>
+      <div className={styles.icon}>
+        <Icon />
       </div>
     </div>
   )
