@@ -13,7 +13,9 @@ const ToggleSwitch = () => {
       <div className={styles.wrapper}>
         <input
           value={value}
-          onChange={(e) => { setValue(e.target.value)}}
+          onChange={(e) => {
+            setValue(e.target.value)
+          }}
           onFocus={() => setHasFocus(true)}
           onBlur={() => setHasFocus(false)}
           className={cx({
@@ -21,15 +23,18 @@ const ToggleSwitch = () => {
             hasFocus,
           })}
         />
-        <ul className={cx({
-          suggestionsPanel: true,
-          hasFocus,
-        })}>
-          <li>Option 1</li>
-          <li>Option 2</li>
-          <li>Option 3</li>
-          <li>Option 4</li>
+        <ul
+          className={cx({
+            suggestionsPanel: true,
+            hasFocus,
+          })}
+        >
+          <li className={styles.list}>Option 1</li>
+          <li className={styles.list}>Option 2</li>
+          <li className={styles.list}>Option 3</li>
+          <li className={styles.list}>Option 4</li>
         </ul>
+        <div className={styles.icon}></div>
       </div>
     </div>
   )
