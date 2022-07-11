@@ -4,8 +4,20 @@ import classNames from 'classnames/bind'
 import Icon from '../icon'
 import styles from './SearchBar.module.scss'
 
-const ItemList = ({ label, icon, id }: any) => (
-  <li className={styles.list}>
+interface ItemListProps {
+  label: string
+  icon: any
+  id: string | number
+  isSelected?: boolean
+}
+
+const ItemList = ({ label, icon, id, isSelected = false }: ItemListProps) => (
+  <li
+    className={cx({
+      list: true,
+      isSelected,
+    })}
+  >
     <div className={styles.item}>
       <div className={styles.label}>{label}</div>
       <div className={styles.secondaryInfo}>
@@ -17,6 +29,24 @@ const ItemList = ({ label, icon, id }: any) => (
     </div>
   </li>
 )
+
+const handleEnterKeyPress = (e: any) => {
+  if (e.key === 'Enter') {
+    console.log('Enter')
+  }
+}
+
+const handleKeyPress = (e: any) => {
+  if (e.key == 'ArrowUp') {
+    console.log('up')
+  } else if (e.key == 'ArrowDown') {
+    console.log('down')
+  } else if (e.key == 'ArrowLeft') {
+    console.log('left')
+  } else if (e.key == 'ArrowRight') {
+    console.log('right')
+  }
+}
 
 const cx = classNames.bind(styles)
 
@@ -38,6 +68,8 @@ const ToggleSwitch = () => {
             input: true,
             hasFocus,
           })}
+          onKeyPress={handleEnterKeyPress}
+          onKeyDown={handleKeyPress}
           placeholder='Busca aquí'
         />
         <ul
@@ -48,7 +80,7 @@ const ToggleSwitch = () => {
         >
           <ItemList label='Option 1' icon={FaSearch} id='12345' />
           <ItemList label='Option 2' icon={FaSearch} id='12346' />
-          <ItemList label='Option 3' icon={FaSearch} id='12347' />
+          <ItemList label='Option 3' icon={FaSearch} id='12347' isSelected />
           <ItemList label='Option 4' icon={FaSearch} id='12348' />
         </ul>
       </div>
