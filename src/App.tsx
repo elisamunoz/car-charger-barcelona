@@ -10,8 +10,6 @@ const App = () => {
   // const { data: dataPanels } = useGetPanels()
   // const { data: dataCameras } = useGetCameras()
 
-  // console.log({ dataPanels })
-  // console.log({ dataCameras })
   return (
     <div className='App'>
       <Main />
