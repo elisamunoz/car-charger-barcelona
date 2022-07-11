@@ -73,6 +73,10 @@
     background: $searchBarFocus;
     transition: $transition;
   }
+
+  &.isSelected {
+    background: $searchBarIsSelected;
+  }
 }
 
 .label {
