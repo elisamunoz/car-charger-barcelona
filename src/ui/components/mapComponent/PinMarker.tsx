@@ -6,11 +6,12 @@ const ICON = `M20.2,15.7L20.2,15.7c1.1-1.6,1.8-3.6,1.8-5.7c0-5.6-4.5-10-10-10S2,
 
 interface Props {
   size?: number
+  color?: string
 }
 
-const Pin = ({ size = 20 }: Props) => (
+const Pin = ({ color, size = 20 }: Props) => (
   <svg height={size} viewBox='0 0 24 24' className={styles.pin}>
-    <path d={ICON} />
+    <path fill={color} d={ICON} />
   </svg>
 )
 
