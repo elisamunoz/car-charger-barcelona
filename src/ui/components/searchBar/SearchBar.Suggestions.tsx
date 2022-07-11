@@ -3,8 +3,26 @@ import classNames from 'classnames/bind'
 import Icon from '../icon'
 import styles from './SearchBar.module.scss'
 
-const ItemList = ({ label, icon, id }: any) => (
-  <li className={styles.list}>
+const cx = classNames.bind(styles)
+interface ItemListProps {
+  label: string
+  icon: any
+  id: string | number
+  isSelected?: boolean
+}
+
+const ItemList = ({
+  label,
+  icon,
+  id,
+  isSelected = false,
+}: ItemListProps) => (
+  <li
+    className={cx({
+      list: true,
+      isSelected,
+    })}
+  >
     <div className={styles.item}>
       <div className={styles.label}>{label}</div>
       <div className={styles.secondaryInfo}>
@@ -17,21 +35,33 @@ const ItemList = ({ label, icon, id }: any) => (
   </li>
 )
 
-const cx = classNames.bind(styles)
-
-const Suggestions = ({ show = false, markersList = [] }: any) => {
-  return (
-    <ul
-      className={cx({
-        suggestionsPanel: true,
-        hasFocus: show,
-      })}
-    >
-      {markersList.map((marker: any) => 
-        <ItemList label={marker.city} icon={FaSearch} id={marker.id} key={marker.id} />
-      )}
-    </ul>
-  )
+interface Props {
+  show: boolean
+  markersList?: any[]
+  selectedItem?: number
 }
+
+const Suggestions = ({
+  show = false,
+  markersList = [],
+  selectedItem = undefined,
+}: Props) => (
+  <ul
+    className={cx({
+      suggestionsPanel: true,
+      hasFocus: show,
+    })}
+  >
+    {markersList.map((marker: any, index: number) => (
+      <ItemList
+        key={marker.id}
+        id={marker.id}
+        label={marker.city}
+        icon={FaSearch}          
+        isSelected={index === selectedItem}
+      />
+    ))}
+  </ul>
+)
 
 export default Suggestions
