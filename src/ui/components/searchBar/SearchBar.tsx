@@ -1,8 +1,22 @@
 import { useState } from 'react'
 import { FaSearch } from 'react-icons/fa'
+import classNames from 'classnames/bind'
 import Icon from '../icon'
 import styles from './SearchBar.module.scss'
-import classNames from 'classnames/bind'
+
+const ItemList = ({ label, icon, id }: any) => (
+  <li className={styles.list}>
+    <div className={styles.item}>
+      <div className={styles.label}>{label}</div>
+      <div className={styles.secondaryInfo}>
+        <div className={styles.itemIcon}>
+          <Icon size={15} icon={icon} />
+        </div>
+        <div className={styles.itemId}>{id}</div>
+      </div>
+    </div>
+  </li>
+)
 
 const cx = classNames.bind(styles)
 
@@ -32,14 +46,14 @@ const ToggleSwitch = () => {
             hasFocus,
           })}
         >
-          <li className={styles.list}>Option 1</li>
-          <li className={styles.list}>Option 2</li>
-          <li className={styles.list}>Option 3</li>
-          <li className={styles.list}>Option 4</li>
+          <ItemList label='Option 1' icon={FaSearch} id='12345' />
+          <ItemList label='Option 2' icon={FaSearch} id='12346' />
+          <ItemList label='Option 3' icon={FaSearch} id='12347' />
+          <ItemList label='Option 4' icon={FaSearch} id='12348' />
         </ul>
       </div>
       <div className={styles.icon}>
-        <Icon size={22} icon={FaSearch} />
+        <Icon size={20} icon={FaSearch} />
       </div>
     </div>
   )
