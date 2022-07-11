@@ -1,4 +1,4 @@
-@import "./colors.scss";
+@import './colors.scss';
 /* -------------- */
 /* --- Sizes ---- */
 /* -------------- */
@@ -36,11 +36,10 @@ $border-radius: 1em;
 // $border: $border-style $border-width $border-color;
 // $border-theme: $border-style $border-width $color-main;
 
-// $transition-duration: 0.5s;
-// $transition-timing: ease;P
-// $transition-property: all;
-// $transition: $transition-duration $transition-timing $transition-property;
-
+$transition-duration: 0.4s;
+$transition-timing: ease;
+$transition-property: all;
+$transition: $transition-duration $transition-timing $transition-property;
 
 /* --------------------- */
 /* --- Font Families --- */
@@ -48,7 +47,6 @@ $border-radius: 1em;
 
 // $font-family-main: 'Roboto', sans-serif;
 // $font-family-title: 'Lexend Giga', serif;
-
 
 /* ********************* */
 /* -- 2. Breakpoints --- */
