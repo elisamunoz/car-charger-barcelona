@@ -1,8 +1,12 @@
 import { useState } from 'react'
 import { FaSearch } from 'react-icons/fa'
 import classNames from 'classnames/bind'
+import { useSelector } from 'react-redux'
+import { getAllMarkers } from 'redux/selectors'
 import Icon from '../icon'
 import styles from './SearchBar.module.scss'
+import useQuerFilterMarkers from 'hooks/useQuerFilterMarkers'
+import Suggestions from './SearchBar.Suggestions'
 
 const ItemList = ({ label, icon, id }: any) => (
   <li className={styles.list}>
@@ -24,6 +28,10 @@ const ToggleSwitch = () => {
   const [value, setValue] = useState('')
   const [hasFocus, setHasFocus] = useState(false)
 
+  const markers = useSelector(getAllMarkers)
+  const markersList = useQuerFilterMarkers(markers, value)
+  const showSuggestions = !!markersList.length && hasFocus
+
   return (
     <div className={cx({ root: true, hasFocus })}>
       <div className={styles.wrapper}>
@@ -40,7 +48,8 @@ const ToggleSwitch = () => {
           })}
           placeholder='Busca aquí'
         />
-        <ul
+        <Suggestions markersList={markersList} show={showSuggestions} />
+        {/* <ul
           className={cx({
             suggestionsPanel: true,
             hasFocus,
@@ -50,7 +59,7 @@ const ToggleSwitch = () => {
           <ItemList label='Option 2' icon={FaSearch} id='12346' />
           <ItemList label='Option 3' icon={FaSearch} id='12347' />
           <ItemList label='Option 4' icon={FaSearch} id='12348' />
-        </ul>
+        </ul> */}
       </div>
       <div className={styles.icon}>
         <Icon size={20} icon={FaSearch} />

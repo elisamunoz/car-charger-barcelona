@@ -49,6 +49,8 @@
   left: 0;
   right: 0;
   z-index: 1000;
+  max-height: 300px;
+  overflow: scroll;
   background: white;
   border: 1px solid $searchBarBorderColor;
   border-radius: 4px;
