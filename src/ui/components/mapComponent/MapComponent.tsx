@@ -15,9 +15,6 @@ interface Props {
 }
 
 const MapComponent = ({ latitude, longitude, cameras = [], panels = [] }: Props) => {
-  console.log(cameras)
-  console.log(panels)
-
   return (
     <div className={styles.map}>
       <Map

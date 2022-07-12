@@ -11,7 +11,12 @@ const Body = () => {
 
   return (
     <div className={styles.body}>
-      <MapComponent longitude={2.15899} latitude={41.38879} cameras={dataCameras} panels={dataPanels} />
+      <MapComponent
+        longitude={2.15899}
+        latitude={41.38879}
+        cameras={dataCameras}
+        panels={dataPanels}
+      />
       <div className={styles.sidePanel}>
         <SidePanel />
       </div>
