@@ -8,21 +8,17 @@ import styles from './SearchBar.module.scss'
 import useQuerFilterMarkers from 'hooks/useQuerFilterMarkers'
 import Suggestions from './SearchBar.Suggestions'
 
-const handleEnterKeyPress = (e: any) => {
-  if (e.key === 'Enter') {
-    console.log('Enter')
-  }
-}
-
 const handleKeyPress = (e: any) => {
-  if (e.key == 'ArrowUp') {
-    console.log('up')
-  } else if (e.key == 'ArrowDown') {
-    console.log('down')
-  } else if (e.key == 'ArrowLeft') {
-    console.log('left')
-  } else if (e.key == 'ArrowRight') {
-    console.log('right')
+  switch (e.key) {
+    case 'ArrowUp':
+      console.log('up')
+      break
+    case 'ArrowDown':
+      console.log('down')
+      break
+    case 'Enter':
+      console.log('Enter')
+      break
   }
 }
 
@@ -50,15 +46,10 @@ const ToggleSwitch = () => {
             input: true,
             hasFocus,
           })}
-          onKeyPress={handleEnterKeyPress}
           onKeyDown={handleKeyPress}
           placeholder='Busca aquí'
         />
-        <Suggestions
-          markersList={markersList}
-          show={showSuggestions}
-          selectedItem={1}
-        />
+        <Suggestions markersList={markersList} show={showSuggestions} selectedItem={1} />
       </div>
       <div className={styles.icon}>
         <Icon size={20} icon={FaSearch} />
