@@ -11,12 +11,7 @@ interface ItemListProps {
   isSelected?: boolean
 }
 
-const ItemList = ({
-  label,
-  icon,
-  id,
-  isSelected = false,
-}: ItemListProps) => (
+const ItemList = ({ label, icon, id, isSelected = false }: ItemListProps) => (
   <li
     className={cx({
       list: true,
@@ -41,11 +36,7 @@ interface Props {
   selectedItem?: number
 }
 
-const Suggestions = ({
-  show = false,
-  markersList = [],
-  selectedItem = undefined,
-}: Props) => (
+const Suggestions = ({ show = false, markersList = [], selectedItem = undefined }: Props) => (
   <ul
     className={cx({
       suggestionsPanel: true,
@@ -57,7 +48,7 @@ const Suggestions = ({
         key={marker.id}
         id={marker.id}
         label={marker.city}
-        icon={FaSearch}          
+        icon={FaSearch}
         isSelected={index === selectedItem}
       />
     ))}
